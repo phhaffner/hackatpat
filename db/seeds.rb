@@ -94,4 +94,3 @@ Event.create([{
 	description: 'petits fours, foie gras, caviar et champagne',
 	users_id: 4
 }])
-
