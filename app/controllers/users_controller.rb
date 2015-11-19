@@ -1,7 +1,3 @@
-class UsersController < ApplicationController
-
-	def index
-		@events = Event.all
-	end
+	class UsersController < ApplicationController
 
 end

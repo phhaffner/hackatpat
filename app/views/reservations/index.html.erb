@@ -1,6 +1,6 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Liste des tes soirées</h1>
+<h1> liste des soirées à venir <h1>
+
 
 <table>
   <thead>
@@ -9,7 +9,9 @@
       <th>Date</th>
       <th>Heure</th>
       <th>Description</th>
+      <th>liens</th>
       <th colspan="3"></th>
+
     </tr>
   </thead>
 
@@ -20,14 +22,8 @@
         <td><%= event.date %></td>
         <td><%= event.heure %></td>
         <td><%= event.description %></td>
-        <td><%= link_to 'Show', event %></td>
-        <td><%= link_to 'Edit', edit_event_path(event) %></td>
-        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to "Paaarty", reservation_path(event) %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Event', new_event_path %>
