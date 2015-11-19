@@ -19,10 +19,6 @@
   <strong>Description:</strong>
   <%= @event.description %>
 </p>
-<!-- 
-	<% unless event.user.***.include?(current_user) %>
-	<%= link_to "follow", follow_profil_path(message.user.id) %>
-	<% end %>
- -->
+
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>

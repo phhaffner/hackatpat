@@ -5,8 +5,24 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css"
+     href="http://yegor256.github.io/tacit/tacit.min.css"/> 
 </head>
 <body>
+
+
+
+<% if user_signed_in? %>
+
+
+<a href="#"> <%= link_to "Deconnexion", destroy_user_session_path, :method => :delete %>
+
+
+<% else %>
+
+<a href="#"> <%= link_to "Connexion", new_user_registration_path %>
+
+<% end %>
 
 <%= yield %>
 
