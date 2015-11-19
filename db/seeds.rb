@@ -10,25 +10,25 @@
 User.create([{
   name: 'gege',
   email: 'gege@gmail.com',
-  password: 'azerty1234',
+  password: 'azerty1234'
 }])
 
 User.create([{
   name: 'toto',
   email: 'toto@gmail.com',
-  password: 'azerty1234',
+  password: 'azerty1234'
 }])
 
 User.create([{
   name: 'dede',
   email: 'dede@gmail.com',
-  password: 'azerty1234',
+  password: 'azerty1234'
 }])
 
 User.create([{
   name: 'momo',
   email: 'momo@gmail.com',
-  password: 'azerty1234',
+  password: 'azerty1234'
 }])
 
 Event.create([{
