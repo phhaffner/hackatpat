@@ -1,1 +1,9 @@
-hey
+<% @events.each do |event| %>
+		<ul>
+      <td><%= event.nom %></td>
+      <td><%= event.date %></td>
+      <td><%= event.heure %></td>
+      <td><%= event.description %></td> 
+      <%= link_to "voir", event %> 
+    <ul>
+<% end %>
