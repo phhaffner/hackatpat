@@ -26,14 +26,14 @@ ActiveRecord::Schema.define(version: 20151119160957) do
   add_index "events", ["users_id"], name: "index_events_on_users_id"
 
   create_table "reservations", force: :cascade do |t|
-    t.integer  "users_id"
-    t.integer  "events_id"
+    t.integer  "user_id"
+    t.integer  "event_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_index "reservations", ["events_id"], name: "index_reservations_on_events_id"
-  add_index "reservations", ["users_id"], name: "index_reservations_on_users_id"
+  add_index "reservations", ["event_id"], name: "index_reservations_on_event_id"
+  add_index "reservations", ["user_id"], name: "index_reservations_on_user_id"
 
   create_table "users", force: :cascade do |t|
     t.datetime "created_at",                          null: false

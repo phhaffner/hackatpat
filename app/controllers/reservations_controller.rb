@@ -1,12 +1,13 @@
 class ReservationsController < ApplicationController
 
-	def index
-		@events = Event.all
-	end
-
-	def show
-		@events = Event.find(params[:id])
-    @users = User.find(params[:id])
+  def create
+  	binding.pry
+  	resa = Reservation.new(user_id: current_user.id, event_id: params[:id])
+  	if resa.save
+  		redirect_to event_path(params[:id])
+  	else
+  		redirect_to index_path
+  	end
   end
 
 end

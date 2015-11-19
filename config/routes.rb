@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root to: 'users#index'
-
+  get 'events/:id/reservations/new' => 'reservations#create', as: :create_resa
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
