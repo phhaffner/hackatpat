@@ -11,9 +11,10 @@
 </p>
 
 <p>
-  <strong>Oragnisateur:</strong>
-  <%= @user.name %>
+  <strong>Organisateur:</strong>
+  Utilisateur <%= @event.user_id %>
 </p>
+
 
 <p>
   <strong>Heure:</strong>
@@ -26,9 +27,13 @@
 </p>
 
 
-<% if current_user.id == @event.user.id %>
+<% if current_user =! @event.user %>
 
-<%= link_to 'Edit', edit_event_path(@event) %> 
+<%= link_to 'Editer', edit_event_path(@event) %> 
+
+
+
+<%= link_to "Delete", delete_event_path(@event.id), data: {confirm: "Are you sure?"}%>
 
 <% else %>
 
@@ -37,4 +42,4 @@
 <% end %>
 
 
-<%= link_to 'Back', events_path %>
+<%= link_to 'Retour', events_path %>
