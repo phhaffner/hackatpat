@@ -20,10 +20,10 @@ ActiveRecord::Schema.define(version: 20151119160957) do
     t.text     "description"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "users_id"
+    t.integer  "user_id"
   end
 
-  add_index "events", ["users_id"], name: "index_events_on_users_id"
+  add_index "events", ["user_id"], name: "index_events_on_user_id"
 
   create_table "reservations", force: :cascade do |t|
     t.integer  "user_id"

@@ -36,7 +36,7 @@ Event.create([{
 	date: '2015-11-20',
 	heure: '14:00:00',
 	description: 'boire et manger des chips',
-	users_id: 1
+	user_id: 1
 }])
 
 Event.create([{
@@ -44,7 +44,7 @@ Event.create([{
 	date: '2015-12-19',
 	heure: '20:56:00',
 	description: 'soirée bataclan',
-	users_id: 1
+	user_id: 1
 }])
 
 Event.create([{
@@ -52,7 +52,7 @@ Event.create([{
 	date: '2016-01-19',
 	heure: '21:56:00',
 	description: 'alcool et code',
-	users_id: 2
+	user_id: 2
 }])
 
 Event.create([{
@@ -60,7 +60,7 @@ Event.create([{
 	date: '2016-03-02',
 	heure: '20:56:00',
 	description: 'jeux et picole, la vie la vrai',
-	users_id: 2
+	user_id: 2
 }])
 
 Event.create([{
@@ -68,7 +68,7 @@ Event.create([{
 	date: '2016-11-19',
 	heure: '21:00:00',
 	description: 'deco glauque, araignées et balade dans les bois',
-	users_id: 3
+	user_id: 3
 }])
 
 Event.create([{
@@ -76,7 +76,7 @@ Event.create([{
 	date: '2016-04-01',
 	heure: '20:00:00',
 	description: 'Soirée au coin du feu',
-	users_id: 3
+	user_id: 3
 }])
 
 Event.create([{
@@ -84,7 +84,7 @@ Event.create([{
 	date: '2016-05-01',
 	heure: '20:00:00',
 	description: 'demerdez vous',
-	users_id: 4
+	user_id: 4
 }])
 
 Event.create([{
@@ -92,5 +92,5 @@ Event.create([{
 	date: '2016-06-19',
 	heure: '18:00:00',
 	description: 'petits fours, foie gras, caviar et champagne',
-	users_id: 4
+	user_id: 4
 }])
